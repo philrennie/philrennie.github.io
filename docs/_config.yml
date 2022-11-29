@@ -32,9 +32,33 @@ url: https://philrennie.github.io  # the base hostname and protocol for your sit
 baseurl: /philrennie.github.io      # place folder name if the site is served in a subfolder
 repository: philrennie/philrennie.github.io
 
+name: "Phil Rennie"
+site.locale: "en-GB"
+site.description: "The site description"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+
+author:
+  name     : "Phil Rennie"
+  # avatar   : "/assets/images/bio-photo.jpg"
+  bio      : "Intranational man of mystery."
+  location : "UK"
+  links:
+    - label: "Made Mistakes"
+      icon: "fas fa-fw fa-link"
+      url: "https://mademistakes.com"
+
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "sunrise"
+minimal_mistakes_skin: "dark"
+
 plugins:
   - jekyll-feed
 
